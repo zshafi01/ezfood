@@ -1,0 +1,11 @@
+th,td {
+width: 100px;
+}
+
+#action{
+    width: 240px;
+}
+
+#action a{
+    margin: 2px;
+}

@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form #customerInfo="ngForm"  (ngSubmit)="CustomerInfo()">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>Check-Out</h3>
+              <input type="text" id="fname" name="firstname" [(ngModel)]="customer.fullname" placeholder="Full Name">
+              <input type="text" id="email" name="email"  [(ngModel)]="customer.email" placeholder="Email@example.com">
+              <input type="text" id="adr" name="address" [(ngModel)]="customer.streat" placeholder="Streat">
+              <input type="text" id="city" name="city" [(ngModel)]="customer.city" placeholder="City">
+  
+              <div class="row">
+                <div class="col-50">
+                  <input type="text" id="state" name="state"  [(ngModel)]="customer.state"  placeholder="State">
+                </div>
+                <div class="col-50">
+                 <input type="text" id="zip" name="zip"  [(ngModel)]="customer.zip" placeholder="zip">
+                </div>
+              </div>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-primary"> Continue To pay</button>
+  
+
+        </form>
+      </div>
+    </div>
+    </div>
+        

@@ -1,0 +1,11 @@
+
+<div *ngFor="let food of foods" class="card" >
+    <img class="image" [src]="food.image" alt="{{food.image}}">
+    <div class="card-body">
+      <h5 class="card-title">{{food.name}}</h5>
+      <p class="card-text">{{food.ingredient}}</p>
+      <p class="card-text">{{food.price}}</p>
+      <p class="card-text">{{food.quantity}}</p>
+
+      <a [routerLink]="['/checkout']" style=" border: 1px solid blue; " >Order</a>    </div>
+  </div>

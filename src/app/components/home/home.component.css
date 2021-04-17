@@ -1,0 +1,18 @@
+
+.image{
+    width: 50%;
+    height: 100px;
+}
+
+.card{
+    border: 1px solid teal;
+    width: 25%;
+    margin: 3px;
+    float: left;
+    
+}
+.card img{
+    height: 250px;
+    border: greenyellow;
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+<div class="panel panel-primary">
+
+
+    <form #foodform="ngForm" (ngSubmit)="updatefood()">
+        <div class="panel-heading">
+            <h3 class="panel-title">Update Food</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label>Id</label>
+                <input id="id" type="text" class="form-control" name="id" [(ngModel)]="newfood.id">
+                <label>Name</label>
+                <input id="food_name" type="text" class="form-control" name="name" [(ngModel)]="newfood.name">
+                <label>Image</label>
+                <input id="food_image" type="text" class="form-control" name="image" [(ngModel)]="newfood.image">
+                <label>Ingredient</label>
+                <input id="ingredient" type="text" class="form-control" name="ingredient"
+                    [(ngModel)]="newfood.ingredient">
+                <label>Price</label>
+                <input id="price" type="text" class="form-control" name="price" [(ngModel)]="newfood.price">
+                <label>Quantity</label>
+                <input id="quantity" type="text" class="form-control" name="quantity" [(ngModel)]="newfood.quantity">
+
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+    </form>
+</div>
