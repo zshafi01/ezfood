@@ -12,8 +12,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import { UpdatefoodComponent } from './components/updatefood/updatefood.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path:'home', component:HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path:'home', component:HomeComponent},
   { path: 'login', component: LoginComponent },
   { path: 'registerfood', component: RegisterComponent },
   { path: 'listoffoods', component: ListoffoodsComponent },
@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'signup', component:SignupComponent},
   { path: 'dashboard', component:DashboardComponent},
   { path: 'pay', component:PayComponent},
-  {path: 'conformation', component:ConformationComponent}
+  { path: 'conformation', component:ConformationComponent}
 ];
 
 @NgModule({
